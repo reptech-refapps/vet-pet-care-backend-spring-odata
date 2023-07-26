@@ -135,7 +135,7 @@ class ControllerTest {
             .get("/generated_app/Appointments?$top=1")
             .then()
             .statusCode(HttpStatusCode.fromStatusCode(200).getStatusCode())
-            .body("value.get(0).AppointmentId", equalTo("<<replace_with_keyFieldValue>>"))
+            .body("value.get(0).AppointmentId", equalTo(1))
             .body("value.size()", is(1));
     given()
             .when()
@@ -182,7 +182,7 @@ class ControllerTest {
             .get("/generated_app/PetOwners?$top=1")
             .then()
             .statusCode(HttpStatusCode.fromStatusCode(200).getStatusCode())
-            .body("value.get(0).Pet_ownerId", equalTo("<<replace_with_keyFieldValue>>"))
+            .body("value.get(0).Pet_ownerId", equalTo(1))
             .body("value.size()", is(1));
     given()
             .when()
@@ -229,7 +229,7 @@ class ControllerTest {
             .get("/generated_app/Veterians?$top=1")
             .then()
             .statusCode(HttpStatusCode.fromStatusCode(200).getStatusCode())
-            .body("value.get(0).Vet_id", equalTo("<<replace_with_keyFieldValue>>"))
+            .body("value.get(0).Vet_id", equalTo(1))
             .body("value.size()", is(1));
     given()
             .when()
@@ -276,7 +276,7 @@ class ControllerTest {
             .get("/generated_app/Visits?$top=1")
             .then()
             .statusCode(HttpStatusCode.fromStatusCode(200).getStatusCode())
-            .body("value.get(0).Visit_id", equalTo("<<replace_with_keyFieldValue>>"))
+            .body("value.get(0).Visit_id", equalTo(1))
             .body("value.size()", is(1));
     given()
             .when()
@@ -323,7 +323,7 @@ class ControllerTest {
             .get("/generated_app/VaccineSchedulers?$top=1")
             .then()
             .statusCode(HttpStatusCode.fromStatusCode(200).getStatusCode())
-            .body("value.get(0).Vaccine_id", equalTo("<<replace_with_keyFieldValue>>"))
+            .body("value.get(0).Vaccine_id", equalTo(2))
             .body("value.size()", is(1));
     given()
             .when()
@@ -370,7 +370,7 @@ class ControllerTest {
             .get("/generated_app/Pets?$top=1")
             .then()
             .statusCode(HttpStatusCode.fromStatusCode(200).getStatusCode())
-            .body("value.get(0).Pet_id", equalTo("<<replace_with_keyFieldValue>>"))
+            .body("value.get(0).Pet_id", equalTo(1))
             .body("value.size()", is(1));
     given()
             .when()
@@ -417,7 +417,7 @@ class ControllerTest {
             .get("/generated_app/VisitSchedulers?$top=1")
             .then()
             .statusCode(HttpStatusCode.fromStatusCode(200).getStatusCode())
-            .body("value.get(0).Visit_id", equalTo("<<replace_with_keyFieldValue>>"))
+            .body("value.get(0).Visit_id", equalTo(1))
             .body("value.size()", is(1));
     given()
             .when()
